@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 #Credential file
+creds.py
 app/creds.py
