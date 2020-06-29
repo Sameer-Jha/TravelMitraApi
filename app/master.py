@@ -53,11 +53,3 @@ def hotel_search(city):
     else:
         return(f'https://www.google.com/travel/hotels/{city}') 
 
-def main():
-    pass
-    # print(flight_search(src='IXR',dest='DEL'))
-    # print(hotel_search('Prayagraj'))
-    # print(bus_search('kanpur','lucknow',20200703))
-
-if __name__ == "__main__":
-    main()
