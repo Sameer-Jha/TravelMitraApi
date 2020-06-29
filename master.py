@@ -28,8 +28,7 @@ def flight_search(src,dest,seating='E',adult=1,child=0,infant=0,date=''):
     print(request_url)
     json_data = requests.get(request_url).content
     json_object = json.loads(json_data)
-    json_format_data = json.dumps(json_object, indent=2)
-    return(json_format_data) 
+    return(json_object) 
 
 def bus_search(src,dest,date):
     src = busCityList.BusCity[src.upper()]
@@ -38,8 +37,7 @@ def bus_search(src,dest,date):
     print(request_url)
     json_data = requests.get(request_url).content
     json_object = json.loads(json_data)
-    json_format_data = json.dumps(json_object, indent=2)
-    return(json_format_data) 
+    return(json_object)
 
 def hotel_search(city):
     if city.lower() in city_dictionary.keys():
@@ -48,8 +46,7 @@ def hotel_search(city):
         print(request_url)
         json_data = requests.get(request_url).content
         json_object = json.loads(json_data)
-        json_format_data = json.dumps(json_object, indent=2)
-        return(json_format_data)
+        return(json_object)
     else:
         return(f'https://www.google.com/travel/hotels/{city}') 
 
