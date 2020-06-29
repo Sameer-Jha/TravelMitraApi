@@ -28,6 +28,3 @@ def bus_booking():
     dest=request.args.get('dest')
     date=request.args.get('date')
     return(master.bus_search(src,dest,date))
-
-if __name__ == "__main__":
-    app.run()
